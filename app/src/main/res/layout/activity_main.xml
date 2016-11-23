@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#828C8E"
+    tools:context="com.islavdroid.todo.MainActivity">
+
+    <com.islavdroid.todo.flc.SwipeStack
+        android:id="@+id/swipeStack"
+        android:layout_width="320dp"
+        android:layout_height="240dp"
+        android:padding="32dp"/>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_add_black_24dp"
+        fab:fab_colorNormal="#FFFFFF"
+        fab:fab_colorPressed="#F5F5F5"
+        fab:fab_colorRipple="#FAFAFA"/>
+</RelativeLayout>
